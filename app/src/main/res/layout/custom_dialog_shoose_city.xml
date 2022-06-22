@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:cardCornerRadius="5dp"
+    app:cardElevation="5dp"
+    android:layout_marginVertical="20dp"
+    android:layout_marginHorizontal="18dp">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageButton
+            android:id="@+id/btn_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:background="@android:color/transparent"
+            android:padding="15dp"
+            android:src="@drawable/close_icon"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btn_close"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/city_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Select"
+                android:textSize="17sp"
+                android:textAlignment="viewStart"
+                android:textDirection="locale"
+                android:layout_marginBottom="25dp"
+                android:gravity="start"
+                android:textColor="@color/colorBlack"
+                android:layout_marginHorizontal="22dp"
+                />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rcv_cities"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:itemCount="3"
+                tools:listitem="@layout/item_city"/>
+
+        </LinearLayout>
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

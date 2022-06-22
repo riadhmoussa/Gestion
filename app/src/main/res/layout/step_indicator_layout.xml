@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout    xmlns:android="http://schemas.android.com/apk/res/android">
+    <data>
+        <variable
+            name="color"
+            type="Boolean" />
+        <variable
+            name="step"
+            type="Integer" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:orientation="vertical"
+        android:paddingHorizontal="8dp"
+        android:layout_height="30dp">
+
+        <TextView
+            android:id="@+id/step_txt"
+            android:textColor="@{color?@color/colorPrimary:@color/grey_light}"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="@{step.toString()}"/>
+        <Button
+            android:id="@+id/step_btn"
+            android:layout_width="55dp"
+            android:layout_gravity="center_horizontal"
+            android:backgroundTint="@{color?@color/colorPrimary:@color/grey_line_text}"
+            android:background="@drawable/rectangle_corner_gradiant_step_grey"
+            android:layout_height="10dp"/>
+    </LinearLayout>
+</layout>

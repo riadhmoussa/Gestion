@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "240388982741",
+    "firebase_url": "https://emergency-3af49-default-rtdb.firebaseio.com",
+    "project_id": "emergency-3af49",
+    "storage_bucket": "emergency-3af49.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:240388982741:android:5ef08c9ed7d9309ca45f5c",
+        "android_client_info": {
+          "package_name": "com.android.smartfridge"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "240388982741-q12064baokt5ftvd6qcjvugsb0savdpu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCg0rDYAOSbNA7u6SSWXXB1BuCWlKNHEXI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "240388982741-q12064baokt5ftvd6qcjvugsb0savdpu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

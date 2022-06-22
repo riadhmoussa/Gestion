@@ -1,0 +1,24 @@
+<resources>
+    <!--
+    TODO: Before you run your application, you need a Google Maps API key.
+
+    To get one, follow this link, follow the directions and press "Create" at the end:
+
+    https://console.developers.google.com/flows/enableapi?apiid=maps_android_backend&keyType=CLIENT_SIDE_ANDROID&r=77:AE:D1:D3:18:D0:A5:52:82:C9:56:53:57:B1:5B:5A:C9:BD:F5:35%3Bcom.android.smartfridge.ui.activities
+
+    You can also add your credentials to an existing key, using these values:
+
+    Package name:
+    com.android.smartfridge.ui.activities
+
+    SHA-1 certificate fingerprint:
+    77:AE:D1:D3:18:D0:A5:52:82:C9:56:53:57:B1:5B:5A:C9:BD:F5:35
+
+    Alternatively, follow the directions here:
+    https://developers.google.com/maps/documentation/android/start#get-key
+
+    Once you have your key (it starts with "AIza"), replace the "google_maps_key"
+    string in this file.
+    -->
+    <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">AIzaSyA2Xj4-V5cx-lKDhnzXYFDK0GNDCNwDyEw</string>
+</resources>

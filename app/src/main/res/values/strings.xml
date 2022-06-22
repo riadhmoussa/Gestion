@@ -1,0 +1,100 @@
+<resources>
+    <string name="app_name"></string>
+    <string name="title_activity_login">LoginActivity</string>
+
+
+    <string name="smartfridge_1">Connect</string>
+    <string name="smartfridge_2">You don\'t have an account?</string>
+    <string name="smartfridge_3">Create a new</string>
+    <string name="smartfridge_4">Check your password</string>
+    <string name="smartfridge_6">E-mail</string>
+    <string name="smartfridge_5"><u>Forgotten password?</u></string>
+    <string name="smartfridge_7">Password </string>
+    <string name="smartfridge_9">Create your account</string>
+    <string name="smartfridge_10">Please enter your information below</string>
+    <string name="smartfridge_11">Last Name *</string>
+
+    <string name="smartfridge_111">Last Name </string>
+    <string name="smartfridge_91">My profile </string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="homeFragment">Home</string>
+    <string name="aboutFragment">About</string>
+    <string name="favoritesFragment">Favorites</string>
+    <string name="nav_header_title">John Doe</string>
+    <string name="nav_header_subtitle">johnDoe@gmail.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+    <string name="smartfridge_16">Register</string>
+    <string name="smartfridge_12">First name *</string>
+    <string name="smartfridge_121">First name </string>
+    <string name="smartfridge_13">E-mail *</string>
+    <string name="smartfridge_131">E-mail </string>
+    <string name="smartfridge_14">Phone / Mobile *</string>
+    <string name="smartfridge_141">Phone / Mobile </string>
+    <string name="smartfridge_15">Password</string>
+    <string name="smartfridge_17">Confirm password *</string>
+    <string name="smartfridge_18">* Required fields</string>
+    <string name="smartfridge_19">Do you already have an account ?</string>
+    <string name="smartfridge_20">Connect</string>
+    <string name="smartfridge_21">Check your E-mail</string>
+
+    <string name="smartfridge_22">Please enter an email!</string>
+    <string name="smartfridge_23">Email Invalid!</string>
+    <string name="smartfridge_24">Non-identical passwords</string>
+    <string name="smartfridge_25">"Invalid phone number"</string>
+    <string name="smartfridge_26">Please confirm both passwords</string>
+    <string name="smartfridge_27">Invalid password!</string>
+    <string name="smartfridge_28">Please enter your name</string>
+    <string name="smartfridge_29">"Please enter your first name"</string>
+    <string name="smartfridge_30">Maximum temperature</string>
+    <string name="smartfridge_31">Start temperature</string>
+    <string name="smartfridge_32">Closing temperature</string>
+    <string name="smartfridge_33">Operating time</string>
+    <string name="smartfridge_34">Save</string>
+    <string name="smartfridge_35">Reset </string>
+
+
+    <string name="oldpassword">Old Password</string>
+    <string name="newpassword">New Password</string>
+    <string name="retypenewpassword">Re-type new</string>
+
+
+    <string name="urgent_case">Urgent case</string>
+    <string name="stablecase">Stable case</string>
+
+
+    <string name="verification_code">Verify Account</string>
+    <string name="enter_text">Enter the code we sent to your email address to verify your new <b>Emergency</b> account :</string>
+    <string name="code">Code</string>
+    <string name="required">La catégorie est obligatoire</string>
+    <string name="dont_recive">Didn\'t recieve the verification Code ? </string>
+    <string name="send_again">Resend again</string>
+    <string name="confirme">Confirmer</string>
+    <string name="title_activity_main2">MainActivity2</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="title_activity_test">test</string>
+
+    <string name="entre_informations">Veuillez entrer vos informations ci-dessous</string>
+    <string name="max_caratcer">charactères sont maximum</string>
+    <string name="selection_symtoms">Symptoms selection</string>
+    <string name="new_call">New Case</string>
+    <string name="case_title">Clinics</string>
+    <string name="description">Description</string>
+    <string name="case_type">Case type</string>
+    <string name="case_subtype">Case subtype</string>
+    <string name="next">Next</string>
+    <string name="bazary_238">Aucun abonnement trouvé</string>
+    <string name="add_case_step_two">Add Case step two</string>
+    <string name="google_map_key">AIzaSyA2Xj4-V5cx-lKDhnzXYFDK0GNDCNwDyEw</string>
+    <string name="title_activity_maps">MapsActivity</string>
+
+
+</resources>

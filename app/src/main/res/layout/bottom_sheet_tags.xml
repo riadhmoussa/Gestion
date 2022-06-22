@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@+id/llAddLocation"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/rounded_dialog"
+    android:orientation="vertical"
+    android:visibility="visible"
+    android:elevation="20dp"
+    android:layout_marginTop="50dp"
+    app:behavior_hideable="true"
+    app:behavior_peekHeight="0dp"
+    app:layout_behavior="@string/bottom_sheet_behavior"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="76dp"
+        android:layout_height="5dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="13dp"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="@color/black_8_opacity"
+        android:id="@+id/lineTop"
+        app:cardCornerRadius="3dp"
+        app:cardElevation="0dp" />
+
+    <RelativeLayout
+        android:id="@+id/layoutTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lineTop"
+        android:layout_marginHorizontal="32dp"
+        android:layout_marginVertical="25dp">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:fontFamily="@font/roboto_bold"
+            android:text=""
+            android:textAlignment="viewStart"
+            android:textColor="@color/black_text_color"
+            android:textDirection="locale"
+            android:textSize="16sp" />
+        <TextView
+            android:id="@+id/saveList_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:fontFamily="@font/roboto_bold"
+            android:text="Save"
+            android:textAlignment="viewEnd"
+            android:textColor="@color/colorPrimary"
+            android:textDirection="locale"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rcv_selected_tags"
+        android:layout_below="@id/layoutTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="25dp"
+        android:clipToPadding="false"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="5dp"
+        android:nestedScrollingEnabled="false"
+        android:orientation="horizontal"
+        android:visibility="gone"
+
+         />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_below="@id/rcv_selected_tags"
+        android:id="@+id/rcv_subTagsSelected"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="5dp"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content"
+        android:nestedScrollingEnabled="false"
+        android:layout_marginHorizontal="24dp"
+        android:visibility="gone"
+         />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rcv_all_tags"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/rcv_subTagsSelected"
+        tools:itemCount="10"
+        android:orientation="vertical"
+
+        android:layout_marginBottom="20dp"
+        tools:listitem="@layout/item_tag_collapsed" />
+
+</RelativeLayout>

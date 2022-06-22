@@ -1,0 +1,65 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimary</item>
+        <item name="colorAccent">@color/colorPrimary</item>
+        <item name="android:windowContentTransitions" tools:targetApi="lollipop">true</item>
+        <item name="android:windowDisablePreview">true</item>
+        <item name="android:windowSoftInputMode">adjustPan</item>
+        <item name="android:textColorHint">@color/colorPrimary</item>
+        <item name="android:textViewStyle">@style/MyTextViewStyle</item>
+        <item name="android:editTextStyle">@style/MyEditTextViewStyle</item>
+
+    </style>
+    <style name="MyTextViewStyle" parent="android:Widget.TextView">
+        <item name="android:textDirection">locale</item>
+    </style>
+    <style name="MyEditTextViewStyle" parent="android:Widget.TextView">
+        <item name="android:textDirection">locale</item>
+        <item name="android:layoutDirection">locale</item>
+        <item name="android:textAlignment">viewStart</item>
+    </style>
+
+    <style name="error_appearance" parent="@android:style/TextAppearance">
+        <item name="android:textColor">@color/red</item>
+        <item name="android:textSize">10dp</item>
+    </style>
+    <style name="valid_appearance" parent="@android:style/TextAppearance">
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:textSize">10dp</item>
+    </style>
+    <style name="MyEditTextTheme">
+        <item name="colorControlNormal">@color/colorPrimary</item>
+        <item name="colorControlActivated">@color/colorPrimary</item>
+        <item name="colorControlHighlight">@color/colorPrimary</item>
+        <item name="android:textDirection">locale</item>
+        <item name="android:textAlignment">viewStart</item>
+        <item name="android:saveEnabled">false</item>
+
+    </style>
+    <style name="MyTextViewTheme">
+        <item name="colorControlNormal">@color/colorPrimary</item>
+        <item name="colorControlActivated">@color/colorPrimary</item>
+        <item name="colorControlHighlight">@color/colorPrimary</item>
+        <item name="android:textDirection">locale</item>
+        <item name="android:textAlignment">viewEnd</item>
+        <item name="android:saveEnabled">false</item>
+    </style>
+
+
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+    <style name="RatingBar" parent="android:style/Widget.Material.RatingBar.Small">
+        <item name="colorControlNormal">@color/gray_divider</item>
+        <item name="colorControlActivated">@color/yellow_color</item>
+    </style>
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+</resources>

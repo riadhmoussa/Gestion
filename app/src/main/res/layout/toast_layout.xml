@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <data>
+        <variable
+            name="isSuccess"
+            type="Boolean" />
+    </data>
+    <androidx.cardview.widget.CardView
+
+        android:layout_width="wrap_content"
+        android:id="@+id/toast_layout_root"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="@{isSuccess?@color/dark_green_color:@color/red_bg_color}"
+        app:cardCornerRadius="15dp"
+        app:contentPadding="1dp">
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            app:cardCornerRadius="15dp"
+            app:cardBackgroundColor="@{isSuccess?@color/green_white_color:@color/red_bg_transparent}"
+            app:cardElevation="10dp"
+            android:id="@+id/card_view_center"
+            app:contentPadding="5dp"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto_regular"
+                    android:textSize="14dp"
+                    android:id="@+id/messageTxt"
+                    android:padding="10dp"
+                    android:textColor="@color/black_text_color"
+                    android:text="sddssdsdsdsdfdfsdfsdfsdfsdfdsf"
+                    android:gravity="center"
+                    />
+            </RelativeLayout>
+
+
+        </androidx.cardview.widget.CardView>
+    </androidx.cardview.widget.CardView>
+</layout>

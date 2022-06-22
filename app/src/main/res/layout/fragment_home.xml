@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+   <data>
+      <variable
+          name="mainactivity"
+          type="com.android.smartfridge.ui.activities.MainActivity" />
+      <variable
+          name="homeFragment"
+          type="com.android.smartfridge.ui.fragments.CustomerFragment" />
+      <variable
+          name="viewModel"
+          type="com.android.smartfridge.viewModels.HomeViewModel" />
+      <import type="android.view.View"/>
+   </data>
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:background="@color/white"
+       android:orientation="vertical">
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:orientation="vertical"
+          android:layout_height="match_parent">
+         <androidx.appcompat.widget.Toolbar
+             android:theme="@style/ThemeOverlay.AppCompat.Dark"
+
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            >
+            <TextView
+                android:id="@+id/tvName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Clients"
+                android:textSize="16dp"
+
+                android:fontFamily="@font/roboto_bold"
+                android:textColor="@color/white"
+                app:layout_constraintStart_toEndOf="@id/imgProfil"
+                app:layout_constraintTop_toTopOf="@id/imgProfil"
+                android:layout_marginTop="5dp"
+                app:layout_constraintEnd_toStartOf="@id/btnSubscribe"
+                android:layout_marginEnd="20dp"
+                android:maxLines="2"
+                android:textAlignment="center"
+                android:textDirection="locale"
+                android:layout_marginStart="16dp"
+                android:ellipsize="end"/>
+         </androidx.appcompat.widget.Toolbar>
+         <androidx.recyclerview.widget.RecyclerView
+             android:id="@+id/rcvFollowers"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             app:layout_constraintTop_toTopOf="parent"
+             android:clipToPadding="false"
+             tools:itemCount="2"
+             tools:listitem="@layout/item_followers"
+             app:layout_constraintStart_toStartOf="parent"
+             app:layout_constraintEnd_toEndOf="parent"
+             app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+             android:orientation="vertical"
+             android:paddingBottom="80dp"
+             />
+
+      </LinearLayout>
+
+   </RelativeLayout>
+
+
+</layout>
